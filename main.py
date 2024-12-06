@@ -1,13 +1,9 @@
-def computePower (x, y):
-    result = 1
-    while (y > 0):
-        if (y % 2 == 0):
-            x =x * x
-            y>>=1
-        else:
-            result = result * x
-            y = y - 1
-    return result
-x = int(input("Enter x for x^y : "))
-y = int(input("Enter y for x^y : "))
-print ("Total : ",(computePower(x, y)))
+from math import gcd
+def find_1cm(a, b):
+    return abs(a * b) // gcd(a, b)
+count = int(input("Enter the number of values: "))
+numbers = []
+for i in range(count):
+    number = int(input(f"Enter number fi + 1}: "))
+    numbers .append(number)
+print("LM of the numbers is:" find_1cm_multiple(numbers))
