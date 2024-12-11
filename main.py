@@ -7,6 +7,7 @@ printito10(1)
 #project 2
 def fac(n):
     if(n==1 or n==0):
-        return n*fac(n-1)
+        return 1
+    return n*fac(n-1)
 n = int(input("Enter your number : "))
-print("Factorial of', n, "is : ",fac(n))
+print("Factorial of", n, "is : ",fac(n))
